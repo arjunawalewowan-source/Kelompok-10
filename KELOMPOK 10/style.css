@@ -1,0 +1,22 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #222; color: white; position: sticky; top: 0; }
+nav a { margin-left: 20px; color: white; text-decoration: none; }
+.hamburger { display: none; cursor: pointer; font-size: 24px; }
+
+#hero { text-align: center; padding: 60px; }
+.hero-img { width: 150px; border-radius: 50%; }
+
+#about, #experience, #skills, #contact, #social { padding: 50px; text-align: center; }
+
+.about-img, .experience-box img { width: 200px; border-radius: 10px; }
+
+.skill-box img { width: 80px; margin: 10px; }
+
+form input, form textarea { width: 60%; padding: 10px; margin: 10px; }
+
+footer { background: #111; color: white; text-align: center; padding: 20px; }
+
+@media (max-width: 768px) {
+    nav { display: none; flex-direction: column; }
+    .hamburger { display: block; }
+}
