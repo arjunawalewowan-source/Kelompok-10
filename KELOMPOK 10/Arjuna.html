@@ -3,74 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Kelompok</title>
+    <title>Portofolio Kelompok - Arjuna</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">Kelompok 3</div>
-    <nav id="menu">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Pengalaman</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-</header>
+    <!-- 1. Navbar -->
+    <header>
+        <nav id="menu">
+            <div class="logo">Kelompok 10</div>
+            
+            <!-- Link Navigasi untuk 3 Orang -->
+            <ul class="nav-links">
+                <li><a href="Arjuna.html" class="active">Arjuna</a></li>
+                <li><a href="Adrian.html">Adrian</a></li>
+                <li><a href="Saikon.html">Saikon</a></li>
+            </ul>
 
-<section id="hero">
-    <img src="images/foto1.jpg" class="hero-img">
-    <h1>Nama Kelompok</h1>
-    <p>Deskripsi singkat mengenai kelompok kalian</p>
-</section>
+            <!-- Hamburger menu (untuk mobile) -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<section id="social">
-    <h2>Sosial Media</h2>
-    <a href="#">Instagram</a> •
-    <a href="#">Facebook</a> •
-    <a href="#">YouTube</a>
-</section>
+    <main>
+        <!-- 2. Heading/Hero Section -->
+        <section id="hero">
+            <!-- Gunakan foto placeholder 1:1 (persegi) -->
+            <img src="https://placehold.co/150x150/EFEFEF/333?text=Foto+Arjuna" alt="Foto Profil Arjuna">
+            <h1>Halo, saya Arjuna</h1>
+            <p>Seorang mahasiswa yang tertarik pada [Tulis deskripsi singkat Anda di sini, misal: Web Development].</p>
+            
+            <!-- 3. Sosial Media -->
+            <div class="social-media">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+            </div>
+        </section>
 
-<section id="about">
-    <h2>Tentang Kami</h2>
-    <img src="images/foto2.jpg" class="about-img">
-    <p>Kami adalah mahasiswa ... (tulis deskripsi singkat)</p>
-</section>
+        <!-- 4. About (Tentang) -->
+        <section id="about" class="container">
+            <h2>Tentang Saya (About)</h2>
+            <div class="about-content">
+                <!-- Gunakan foto placeholder 4:3 (horizontal) -->
+                <img src="https://placehold.co/400x300/CCC/333?text=Tentang+Saya" alt="Foto tentang Arjuna">
+                <p>Tulis paragraf yang menjelaskan tentang diri Anda di sini. Ceritakan latar belakang Anda, minat Anda, atau apa yang sedang Anda pelajari. Buat semenarik mungkin!</p>
+            </div>
+        </section>
 
-<section id="experience">
-    <h2>Pengalaman</h2>
-    <div class="experience-box">
-        <img src="images/pengalaman.jpg">
-        <p>Deskripsi pengalaman kalian.</p>
-    </div>
-</section>
+        <!-- 5. Pengalaman (atau Proyek) -->
+        <section id="experience" class="container">
+            <h2>Pengalaman / Proyek (Experience)</h2>
+            <div class="portfolio-grid">
+                <!-- Item 1 -->
+                <div class="portfolio-item">
+                    <!-- Gunakan foto placeholder 16:9 (lebar) -->
+                    <img src="https://placehold.co/400x225/999/FFF?text=Proyek+1" alt="Foto Proyek 1">
+                    <h3>Nama Proyek 1</h3>
+                    <p>Deskripsi singkat tentang proyek atau pengalaman Anda.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x225/999/FFF?text=Proyek+2" alt="Foto Proyek 2">
+                    <h3>Nama Proyek 2</h3>
+                    <p>Deskripsi singkat tentang proyek atau pengalaman Anda.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x225/999/FFF?text=Proyek+3" alt="Foto Proyek 3">
+                    <h3>Nama Proyek 3</h3>
+                    <p>Deskripsi singkat tentang proyek atau pengalaman Anda.</p>
+                </div>
+            </div>
+        </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-        <img src="images/skill1.png">
-        <img src="images/skill2.png">
-        <img src="images/skill3.png">
-    </div>
-</section>
+        <!-- 6. Skill (Keterampilan) -->
+        <section id="skills" class="container">
+            <h2>Keterampilan (Skills)</h2>
+            <ul class="skills-list">
+                <!-- Ganti dengan foto/icon jika mau, tapi teks lebih mudah -->
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Figma</li>
+                <li>Public Speaking</li>
+            </ul>
+        </section>
 
-<section id="contact">
-    <h2>Kontak</h2>
-    <form>
-        <input type="text" placeholder="Nama">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Pesan"></textarea>
-        <button>Kirim</button>
-    </form>
-</section>
+        <!-- 7. Contact (Kontak) -->
+        <section id="contact" class="container">
+            <h2>Kontak Saya (Contact)</h2>
+            <p>Silakan hubungi saya melalui form di bawah ini.</p>
+            <form class="contact-form">
+                <div>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
 
-<footer>
-    <h3>Lokasi Kami</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
-</footer>
+    <!-- 8. Footer (dengan Peta) -->
+    <footer>
+        <div class="container">
+            <h3>Lokasi Saya</h3>
+            <!-- Ganti 'src' dengan link embed dari Google Maps -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666466380625!2d106.82496417596396!3d-6.175392393806173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2547f0ef95a53!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1715000000000!5m2!1sid!2sid" 
+                width="600" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>&copy; 2025 Kelompok 10. Dibuat oleh Arjuna, Adrian, & Saikon.</p>
+        </div>
+    </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
